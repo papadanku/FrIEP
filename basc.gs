@@ -1,3 +1,4 @@
+
 /** @OnlyCurrentDoc */
 
 function BASC_ProcessCells(spreadsheet, scaleRange, validitiyRange, pasteScales, pasteValidity)
@@ -56,7 +57,7 @@ function BASC_MarkScores(spreadsheet, contentScaleRange, adaptiveScaleRange)
     .replaceAllWith('$1**');
 }
 
-function CopyPaste()
+function BASC_CopyPaste()
 {
   // Initialize sheet
   const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
