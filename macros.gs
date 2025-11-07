@@ -27,15 +27,15 @@ function BASC_MarkScores(spreadsheet, contentScaleRange, adaptiveScaleRange)
   // Find-Replace At-Risk scores (Use ^ and $ for full cell match)
   // Matches exactly 60 through 69
   contentCells
-    .createTextFinder('^(6\\d)$') 
-    .useRegularExpression(true)
+    .createTextFinder('(6\\d)') 
+    .useRegularExpression(true).matchEntireCell(true)
     .replaceAllWith('$1*');
   
   // Find-Replace Clinically Significant scores (Use ^ and $ for full cell match)
   // Matches 100+ (\d{3,}) or 70-99 ([7-9]\d)
   contentCells
-    .createTextFinder('^(\\d{3,}|[7-9]\\d)$') 
-    .useRegularExpression(true)
+    .createTextFinder('(\\d{3,}|[7-9]\\d)') 
+    .useRegularExpression(true).matchEntireCell(true)
     .replaceAllWith('$1**');
 
   // Process Adaptive scales
@@ -44,15 +44,15 @@ function BASC_MarkScores(spreadsheet, contentScaleRange, adaptiveScaleRange)
   // Find-Replace At-Risk scores (Use ^ and $)
   // Matches exactly 40 or 30 through 39
   adaptiveCells
-    .createTextFinder('^(40|3\\d)$')
-    .useRegularExpression(true)
+    .createTextFinder('(40|3\\d)')
+    .useRegularExpression(true).matchEntireCell(true)
     .replaceAllWith('$1*');
   
   // Find-Replace Clinically Significant scores (Use ^ and $)
   // Matches exactly 30 or 0-29
   adaptiveCells
-    .createTextFinder('^(30|[0-2]\\d)$')
-    .useRegularExpression(true)
+    .createTextFinder('(30|[0-2]\\d)')
+    .useRegularExpression(true).matchEntireCell(true)
     .replaceAllWith('$1**');
 }
 
