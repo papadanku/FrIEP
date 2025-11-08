@@ -1,3 +1,4 @@
+/** @OnlyCurrentDoc */
 
 function findAndReplace(inputRange, findString, replaceString) {
   inputRange

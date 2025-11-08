@@ -1,3 +1,4 @@
+/** @OnlyCurrentDoc */
 
 function vnlMarkScores(spreadsheet, cellRange, moderatelyLowSearch, lowSearch) {
   let cells = spreadsheet.getRange(cellRange);
@@ -21,6 +22,6 @@ function vnlMain() {
     vnlMarkScores(spreadsheet, 'B20:C32', '(1[0-2])', '(\\d)');
 
     // Maladaptive
-    vnlMarkScores(spreadsheet, 'B34:C35','(20|1[8-9])', '(2[1-4])');
+    vnlMarkScores(spreadsheet, 'B34:C35', '(20|1[8-9])', '(2[1-4])');
   }
 }

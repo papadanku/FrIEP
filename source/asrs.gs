@@ -1,3 +1,4 @@
+/** @OnlyCurrentDoc */
 
 function asrsMain() {
   const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();

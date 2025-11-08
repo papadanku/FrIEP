@@ -1,3 +1,4 @@
+/** @OnlyCurrentDoc */
 
 function connersMain() {
   const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
