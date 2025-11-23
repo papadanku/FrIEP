@@ -57,22 +57,22 @@ The agent's goal is to assist users in developing, maintaining, or extending the
 
 ## Instructions
 
-@./gemini/instructions.md
+@./.gemini/instructions.md
 
 ## Knowledge
 
-@./gemini/evaluation_templates/assessment_academic.md
+@./.gemini/evaluation_templates/assessment_academic.md
 
-@./gemini/evaluation_templates/assessment_adaptive.md
+@./.gemini/evaluation_templates/assessment_adaptive.md
 
-@./gemini/evaluation_templates/assessment_adhd.md
+@./.gemini/evaluation_templates/assessment_adhd.md
 
-@./gemini/evaluation_templates/assessment_autism.md
+@./.gemini/evaluation_templates/assessment_autism.md
 
-@./gemini/evaluation_templates/assessment_cognitive.md
+@./.gemini/evaluation_templates/assessment_cognitive.md
 
-@./gemini/evaluation_templates/assessment_pwn.md
+@./.gemini/evaluation_templates/assessment_pwn.md
 
-@./gemini/evaluation_templates/assessment_social_emotional.md
+@./.gemini/evaluation_templates/assessment_social_emotional.md
 
-@./gemini/evaluation_templates/evaluation_summary.md
+@./.gemini/evaluation_templates/evaluation_summary.md
