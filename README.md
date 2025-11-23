@@ -10,7 +10,7 @@ These scripts are designed to be used within Google Sheets as Google Apps Script
 ### Steps to Integrate and Use the Scripts:
 
 1. **Open Google Sheet:** Open the Google Sheet where you want to use these scripts.
-2. **Access Apps Script Editor:** Go to `Extensions > Apps Script` in the Google Sheet menu. This will open a new tab with the Apps Script editor.
+2. **Access Apps Script Editor:** Go to **Extensions > Apps Script** in the Google Sheet menu. This will open a new tab with the Apps Script editor.
 3. **Create New Script Files (if starting fresh):**
     * In the Apps Script editor, you'll typically see a `Code.gs` file by default. You can rename this or create new `.gs` files.
     * To create a new file, click the "+" icon next to "Files" in the left sidebar and select "Script". Name the file appropriately (e.g., `asrs.gs`, `basc.gs`, `conners.gs`, `shared.gs`, `vnl.gs`).
