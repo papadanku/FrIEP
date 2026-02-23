@@ -1,78 +1,87 @@
-# Project Overview: frIEP ("Free IEP")
+# Project Overview: FrIEP ("Free IEP")
 
-frIEP is a collection of Google Apps Script files designed to automate data processing and score marking within Google Sheets for psychological assessments. The project aims to streamline the process of evaluating and highlighting clinically significant scores for various assessments.
+FrIEP is a comprehensive collection of tools designed to assist school psychologists in streamlining their workflow. It automates the tedious process of scoring psychological assessments within Google Sheets and facilitates the drafting of narrative evaluation reports.
 
-It includes scripts tailored for:
-*   ASRS (Adult ADHD Self-Report Scale)
-*   BASC-3 (Behavior Assessment System for Children, Third Edition)
-*   Conners 4 (Conners Fourth Edition)
-*   Vineland 3 (Vineland Adaptive Behavior Scales, Third Edition)
+## Components Overview
 
-The scripts provide functionalities to move data between specified ranges within Google Sheets and to highlight scores based on predefined clinical significance criteria using asterisks (e.g., `*`, `**`, `***`).
+The FrIEP project comprises three main components, each addressing a specific aspect of a school psychologist's tasks:
 
-## Directory Overview
+### 1. Google Apps Scripts (`google_apps_script/`)
 
-*   **`google_apps_script/`**: This directory contains the core Google Apps Script files (`.gs`) that implement the automation logic for each psychological assessment.
-*   **`gemini/`**: This directory holds instructions and evaluation templates specifically designed for the Gemini CLI agent. These files guide the agent's understanding and interaction with this project, particularly for evaluation tasks.
-*   **`_config.yml`**: A configuration file, likely used for GitHub Pages, indicating the project's documentation or website uses the Cayman theme.
-*   **`LICENSE`**: Contains the licensing information for the frIEP project.
-*   **`README.md`**: Provides a detailed human-readable overview of the project, including comprehensive installation and usage instructions for the Google Apps Scripts.
+This directory contains a suite of Google Apps Scripts designed for integration with Google Sheets. Their primary function is to automate the scoring and marking of various psychological assessments based on predefined clinical significance rules.
 
-## Key Files in `google_apps_script/`
+*   **Purpose:** To automatically process raw scores for assessments like ASRS, BASC-3, Conners 4, EDDT, and Vineland 3, applying clinical significance markings directly within Google Sheets.
+*   **Key Functionality:**
+    *   **Automated Scoring:** Scripts read assessment data from specified cell ranges and apply rules to mark scores (e.g., with asterisks for significant findings).
+    *   **Shared Utilities:** The `core.gs` file provides common functions like `findAndReplace` which applies marking rules to cell ranges efficiently.
+    *   **Spreadsheet Event Handling:** Includes `onOpen` and `onSpreadsheetChange` functions to automatically format cells (e.g., setting vertical alignment) when a spreadsheet is opened or modified.
+*   **Usage:** These scripts are intended to be copied and pasted into the Google Apps Script editor associated with a Google Sheet. They can then be run as macros to process assessment data. Customization options are available for adjusting target cells and score marking rules directly within the `.gs` files.
 
-*   **`asrs.gs`**: Contains the Google Apps Script logic for processing and marking scores related to the ASRS assessment.
-*   **`basc.gs`**: Contains the Google Apps Script logic for processing and marking scores related to the BASC-3 assessment.
-*   **`conners.gs`**: Contains the Google Apps Script logic for processing and marking scores related to the Conners 4 assessment.
-*   **`core.gs`**: This file likely contains shared utility functions or core functionalities utilized across multiple assessment scripts. (Note: The `README.md` mentions `shared.gs`, but `core.gs` is present in the directory listing, suggesting it serves a similar purpose for shared code.)
-*   **`vnl.gs`**: Contains the Google Apps Script logic for processing and marking scores related to the Vineland 3 assessment.
+### 2. Psychologist Writer Skill (`.agents/skills/psychologist-writer/`)
 
-## Usage
+This component is a specialized skill for the Gemini CLI agent, designed to generate narrative sections for psychoeducational reports. It leverages a collection of Markdown templates to produce consistent and standardized report content.
 
-### For Google Apps Scripts (within Google Sheets)
+*   **Purpose:** To assist in drafting psychoeducational report narratives by populating predefined templates with student-specific data and score classifications, ensuring consistency and adherence to reporting standards.
+*   **Key Functionality:**
+    *   **Data Ingestion:** Processes unstructured input (student name, rater names, scores) to structure variables for template population.
+    *   **Template Selection:** Utilizes Markdown templates (e.g., `assessment_academic.md`, `assessment_adhd.md`) stored in `assets/templates/` to generate report sections.
+    *   **Score Classification:** Interprets numeric scores (Standard Scores, T-Scores, Percentile Ranks) and converts them into descriptive categories (e.g., "Average," "Clinically Significant") based on embedded classification tables within the templates.
+    *   **Narrative Generation:** Substitutes placeholder variables (e.g., `_firstname`, `SS: ??`) in templates with actual data and classifications, formatting the output as a coherent narrative.
+*   **Available Templates:** A variety of templates cover different assessment areas, such as academic, adaptive, ADHD, autism, cognitive, and social-emotional assessments, as well as general evaluation summaries.
+*   **Usage:** Intended to be activated and used via the Gemini CLI, where users provide student data and specify the desired template to generate report sections.
 
-The scripts in `google_apps_script/` are designed to be integrated directly into Google Sheets as Google Apps Script projects. There is no traditional installation; instead, you copy and paste the code into the Apps Script editor associated with your Google Sheet.
+### 3. Date Calculator (`date_calculator/`)
 
-**General Steps:**
-1.  Open your target Google Sheet.
-2.  Navigate to `Extensions > Apps Script` to open the Apps Script editor.
-3.  Create new `.gs` files in the editor (e.g., `asrs.gs`, `basc.gs`, `conners.gs`, `core.gs`, `vnl.gs`).
-4.  Copy the content from the corresponding files in this repository into the newly created script files in the Apps Script editor.
-5.  Save the Apps Script project.
-6.  Select and run the desired main function (e.g., `asrsMain`, `bascMain`) from the dropdown in the Apps Script editor. Grant authorization if prompted.
+A lightweight, self-contained single-page HTML application designed for performing common date calculations.
 
-**Customization:**
-*   **Assessment-Specific Logic:** Modify `rangeArray` or `switch` statements within individual assessment scripts to adjust target cells or sheet names.
-*   **Score Marking Criteria:** Adjust regular expressions and asterisk patterns within `findAndReplace` calls to change how scores are highlighted based on clinical significance.
-*   **Shared Utilities:** The `core.gs` (or equivalent shared utility file) can be modified to change global text replacement behavior.
+*   **Purpose:** To provide a fast and reliable way to calculate the duration between two dates or to find a future or past date by adding/subtracting a specified duration, without requiring external software or an internet connection.
+*   **Key Functionality:**
+    *   **Duration Calculator Mode:** Determines the exact period (years, months, days) between a start and end date.
+    *   **Date Arithmetic Mode:** Calculates a new date by adding or subtracting a specified amount of time (days, weeks, months, years) from a base date.
+    *   **User-Friendly Interface:** Features "Set Today" buttons, client-side validation, and a responsive design.
+*   **Technology Stack:** Built using HTML5 for structure, CSS3 for styling (all self-contained), and Vanilla JavaScript (ES6+) for all logic and DOM manipulation. No external libraries or frameworks are used.
+*   **Usage:** Can be used offline by simply opening the `date_calculator.html` file in any modern web browser.
 
-### For Gemini CLI Agent
+## Building and Running
 
-This `GEMINI.md` file serves as a primary instructional context for the Gemini CLI agent. The agent should refer to this document to:
-*   Understand the overall purpose and architecture of the frIEP project.
-*   Identify the location and function of key code files, particularly within `google_apps_script/`.
-*   Grasp the intended usage and customization points of the Google Apps Scripts.
-*   Utilize the `gemini/evaluation_templates/` for specific tasks or to generate responses related to psychological assessment automation.
+### Google Apps Scripts
 
-The agent's goal is to assist users in developing, maintaining, or extending the functionality of these Google Apps Scripts, or to provide insights based on the assessment logic contained within them.
+1.  **Open Google Sheet:** Open the desired Google Sheet in your web browser.
+2.  **Access Apps Script:** Go to `Extensions > Apps Script` from the Google Sheet menu.
+3.  **Create New Script Files:** For each `.gs` file in the `google_apps_script/` directory, create a new script file in the Apps Script editor (e.g., `asrs.gs`, `core.gs`).
+4.  **Copy Code:** Copy the code from the corresponding `.gs` file in this repository and paste it into the newly created script file in the Apps Script editor.
+5.  **Run as Macros:** In your Google Sheet, go to `Extensions > Macros > Import Macro` and add the functions ending with "Main" (e.g., `asrsMain`, `eddtMain`, `bascMain`). These can then be run directly from the Macros menu.
 
-## Instructions
+### Psychologist Writer Skill
 
-@./.gemini/instructions.md
+This is a Gemini CLI skill. No explicit "build" step is required.
 
-## Knowledge
+1.  **Activate Skill:** The skill is activated within the Gemini CLI environment.
+2.  **Generate Reports:** Provide student data and specify the desired template to the Gemini CLI agent. The agent will use the skill to generate the narrative sections of the psychoeducational report. Refer to the `SKILL.md` for detailed usage instructions and placeholder variables.
 
-@./.gemini/evaluation_templates/assessment_academic.md
+### Date Calculator
 
-@./.gemini/evaluation_templates/assessment_adaptive.md
+No build step is required.
 
-@./.gemini/evaluation_templates/assessment_adhd.md
+1.  **Open in Browser:** Simply open the `date_calculator/date_calculator.html` file in any modern web browser. The application is entirely self-contained within this single HTML file.
 
-@./.gemini/evaluation_templates/assessment_autism.md
+## Development Conventions
 
-@./.gemini/evaluation_templates/assessment_cognitive.md
+### Google Apps Scripts
 
-@./.gemini/evaluation_templates/assessment_pwn.md
+*   **Code Structure:** Scripts are organized by assessment type (e.g., `asrs.gs`, `basc.gs`) with `core.gs` containing shared utility functions.
+*   **Customization:**
+    *   **Target Cells:** Edit `getRange()` calls within individual assessment scripts (e.g., `'B18:E33'`) to modify the cell ranges processed.
+    *   **Scoring Rules:** The `rules` array in each script defines score ranges (`min`, `max`) and suffixes (e.g., `*`, `**`) for marking. These can be adjusted to match specific criteria.
+    *   **Shared Functions:** Changes to the `findAndReplace` function (in `core.gs`) will affect how text is replaced across all other scripts.
 
-@./.gemini/evaluation_templates/assessment_social_emotional.md
+### Psychologist Writer Skill
 
-@./.gemini/evaluation_templates/evaluation_summary.md
+*   **Template Format:** Report narratives are defined in Markdown files (`.md`) located in `assets/templates/`.
+*   **Placeholders:** Templates utilize specific placeholder variables (e.g., `_firstname`, `SS: ??`, `??`) which are dynamically replaced by the Gemini CLI agent with student data and score classifications. Adhering to this placeholder convention is crucial for proper narrative generation.
+
+### Date Calculator
+
+*   **Self-Contained:** All HTML, CSS, and JavaScript are embedded within `date_calculator.html`, making it a highly portable and dependency-free tool.
+*   **Vanilla JavaScript:** The application relies solely on vanilla JavaScript (ES6+) for its logic, avoiding external libraries or frameworks for simplicity and performance.
+*   **Responsive Design:** CSS is used to ensure a consistent and user-friendly experience across various device sizes.

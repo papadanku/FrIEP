@@ -1,4 +1,3 @@
-
 # Prior Written Notice Templates
 
 ## Transfer Prior Written Notice
@@ -167,7 +166,7 @@ Explanation of why the agency proposes to take this action:
 
 Description of any options the agency considered:
 
-Proposal #1: The option to determine eligibility through existing data was considered and rejected.
+Proposal #1: The Team considered determining eligibility through existing data.
 
 Reasons the above listed were rejected:
 
@@ -199,33 +198,63 @@ The District is proposing to determine _firstname eligible for special education
 
 Explanation of why the agency proposes to take this action:
 
-_firstname requires ?? and related services to benefit from _firstname's educational program. _firstname displays academic challenges that are closely linked to significant cognitive processing deficits in ?? (??), ?? (??), and ?? (??). These deficits significantly hinder _firstname's ability to engage with the ?? grade general education curriculum. To develop an Individualized Education Program (IEP) for _firstname, ?? academic, functional, and cognitive information was gathered during the ??.
+_firstname requires ?? and related services to benefit from _his/her educational program. _firstname displays academic challenges that are closely linked to significant cognitive processing deficits in ?? (??), ?? (??), and ?? (??). These deficits significantly hinder _firstname's ability to engage with the ?? grade general education curriculum. To develop an Individualized Education Program (IEP) for _firstname, ?? academic, functional, and cognitive information was gathered during the ??.
 
 Description of any options the agency considered:
 
-Proposal #1: The Team considered assessing _firstname in the area of ??.
-Proposal #2: The Team considered assessing _firstname in the area of ?? (suspected ??).
-Proposal #3: The Team considered assessing _firstname in the area of ??.
+- Proposal #1: The Team considered assessing _firstname in the area of ??.
+- Proposal #2: The Team considered assessing _firstname in the area of ?? (suspected ??).
+- Proposal #3: The Team considered assessing _firstname in the area of ??.
 
 Reasons the above listed were rejected:
 
-Proposal #1: The option to classify _firstname under ?? was considered and rejected. Although the team determined that ??, they observed a divergence in _firstname's symptoms reported in both ?? and ?? settings. School observations indicated ??. The parents agreed with this assessment.
-
-Proposal #2: The option to classify _firstname under ?? was also considered and rejected. This was due to significant discrepancies in symptom reporting between ?? and ??, particularly in the core areas of ??. These discrepancies were demonstrated by the ?? and ?? rating scales, as well as with ?? observations in the classroom setting. The parents concurred with this decision.
-
-Proposal #3: The option to classify _firstname under ?? was also rejected. _firstname's responses on the ?? did not indicate extreme difficulties in ?? internalizing and externalizing domains. The team concluded that _firstname's behaviors are likely a reaction to ??. They suspected that _firstname's primary educational disability impacting _firstname's learning is a ??.
+- Proposal #1: The option to classify _firstname under ?? was considered and rejected. Although the team determined that ??, they observed a divergence in _firstname's symptoms reported in both ?? and ?? settings. School observations indicated ??. The parents agreed with this assessment.
+- Proposal #2: The option to classify _firstname under ?? was also considered and rejected. This was due to significant discrepancies in symptom reporting between ?? and ??, particularly in the core areas of ??. These discrepancies were demonstrated by the ?? and ?? rating scales, as well as with ?? observations in the classroom setting. The parents concurred with this decision.
+- Proposal #3: The option to classify _firstname under ?? was also rejected. _firstname's responses on the ?? did not indicate extreme difficulties in ?? internalizing and externalizing domains. The team concluded that _firstname's behaviors are likely a reaction to ??. They suspected that _firstname's primary educational disability impacting _firstname's learning is a ??.
 
 Description of each evaluation procedure, test, record, or report the agency used/will use as a basis for the proposed action:
-
 The following assessments were administered during the evaluation: ??, ??, ??, ??, ??, ??, ??, ??, ??, ??, ??, ??.
 
 Description of any other factors that are relevant to the agency's proposal or refusal:
 
 - The Team met on ??.
-- The Team included the adoptive mother (??), adoptive father (??), general education teacher (??), special education teacher (??), speech language pathologist (??), occupational therapist (??), and school psychologist (??).
+- The Team included the parent(s) (??), general education teacher (??), special education teacher (??), and school psychologist (??).
 - The Team was in agreement to the ?? and eligibility ??.
-- The Adoptive father mentioned that the ?? data reported in the evaluation does match with his observations in the ?? setting.
-- The Adoptive parents reported that _firstname has recently been receiving social ?? from outside the school setting for the first time.
+- The parent(s) mentioned that the ?? data reported in the evaluation does match with _his/her observations in the ?? setting.
+- The parent(s) reported that _firstname has recently been receiving ?? from outside the school setting.
+
+## Eligibility (Triennial Evaluation)
+
+Description of the action proposed:
+
+The District is proposing to continue _firstname’s eligibility for special education services under the primary classification of ?? in the areas of ??. Based on the triennial re-evaluation, the Team proposes to maintain _firstname’s placement in ?? and update _his/her Individualized Education Program (IEP).
+
+Explanation of why the agency proposes to take this action:
+
+The re-evaluation results indicate that _firstname continues to meet the eligibility criteria for ??. _He/She continues to demonstrate academic deficits in ?? that are significantly impacted by _his/her cognitive processing weaknesses in ??. _firstname requires continued specially designed instruction and related services to access and progress in the general education curriculum. Current functional and classroom data confirm that _firstname’s disability adversely affects _his/her educational performance.
+
+Description of any options the agency considered:
+
+- Proposal #1: The Team considered finding _firstname no longer eligible for special education services (dismissal).
+- Proposal #2: The Team considered adding/changing the eligibility category to ??.
+- Proposal #3: The Team considered continuing eligibility in the areas of ??.
+
+Reasons the above listed were rejected:
+
+- Proposal #1: The option to find _firstname ineligible was rejected because current standardized assessment data and classroom performance indicate that _he/she continues to perform significantly below age and grade-level expectations in ??.
+- Proposal #2: The option to change/add the category of ?? was rejected because _firstname’s primary barriers to learning are more accurately captured under the current classification of ??. Evaluation data from the ?? did not support a change in identification at this time.
+- Proposal #3: Continuing eligibility in ?? was rejected because _firstname’s scores now fall within the normative average range for that specific area, indicating _he/she no longer demonstrates a disability in that domain.
+
+Description of each evaluation procedure, test, record, or report the agency used/will use as a basis for the proposed action:
+The Team reviewed existing data and administered the following: ??, ??, ??, ??, ??, ??, ??.
+
+Description of any other factors that are relevant to the agency's proposal or refusal:
+
+- The Team met for the triennial review on ??.
+- Participants included the parent(s) (??), general education teacher (??), special education teacher (??), and school psychologist (??).
+- The Team, including the parent(s), agreed with the evaluation results and the proposed continued eligibility.
+- _firstname’s parent(s) received a copy of the Procedural Safeguards.
+- An IEP meeting will be scheduled by ?? to review goals and services based on these findings.
 
 ## Individualized Education Program (IEP)
 
