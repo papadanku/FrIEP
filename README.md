@@ -1,30 +1,46 @@
 
 # FrIEP ("Free IEP")
 
-FrIEP is a collection of tools that help school psychologists streamline their workflow. It automates the tedious parts of scoring psychological assessments in Google Sheets and helps draft the narrative evaluation reports that follow.
+FrIEP is a comprehensive collection of tools designed to assist school psychologists in streamlining their workflow. It automates the tedious process of scoring psychological assessments within Google Sheets and facilitates the drafting of narrative evaluation reports.
 
-## What's Inside?
+## Components
 
-This repository contains two main components:
+### 1. Google Apps Scripts (`google_apps_script/`)
 
-- **`google_apps_script/`**: A set of Google Apps Scripts that you can add to any Google Sheet. These scripts automatically process raw scores for various assessments, marking them based on clinical significance. This includes scripts for:
-    - ASRS (Autism Spectrum Rating Scales)
-    - BASC-3 (Behavior Assessment System for Children, Third Edition)
-    - Conners 4
-    - EDDT (Emotional Disturbance Decision Tree)
-    - Vineland 3 (Vineland Adaptive Behavior Scales, Third Edition)
-- **`.gemini/`**: This directory holds instructions and evaluation templates for the Gemini CLI agent. After your scores are processed, you can use Gemini to quickly generate formatted sections of a psychoeducational report based on the data.
+A suite of scripts for Google Sheets that automate the scoring and marking of various psychological assessments based on clinical significance rules.
 
-You will also find a simple `date_calculator/` tool for calculating chronological ages.
+* **Supported Assessments:** ASRS, BASC-3, Conners 4, EDDT, and Vineland 3.
+* **Key Feature:** Automatically marks scores (e.g., with asterisks) based on predefined thresholds using efficient batch processing.
 
-## How It Works
+### 2. Psychologist Writer Skill (`skills/psychologist-writer/`)
 
-### 1. Automate Scoring in Google Sheets
+A specialized skill for the Gemini CLI that generates narrative sections for psychoeducational reports using standardized Markdown templates.
 
-You start by copying the scripts from the `google_apps_script/` directory into the Apps Script editor of your Google Sheet. Once installed, you can run them as macros to instantly process and mark your assessment data.
+* **Functionality:** Processes student data and scores to populate templates with professional narrative and clinical classifications.
+* **Templates:** Includes Academic, Adaptive, ADHD, Autism, Cognitive, Social-Emotional, and Evaluation Summaries.
 
-For detailed setup instructions, see the [Google Apps Script README](google_apps_script/README.md).
+### 3. Date Calculator (`date_calculator/`)
 
-### 2. Generate Reports with Gemini
+A lightweight, self-contained single-page HTML application for performing common date calculations without an internet connection.
 
-After scoring, you can take the processed data and use it with the Gemini CLI. The agent uses the templates in the `.gemini/` directory to help you draft the narrative sections of your evaluation report, saving you time and effort.
+* **Capabilities:** Calculate duration between dates (e.g., chronological age) and perform date arithmetic (adding/subtracting days, weeks, months, or years).
+
+## Getting Started
+
+### Google Apps Scripts
+
+Copy the code from the `.gs` files in the `google_apps_script/` directory into your Google Sheet's Apps Script editor. Refer to the [Google Apps Script README](google_apps_script/README.md) for detailed setup and customization instructions.
+
+### Psychologist Writer Skill
+
+This skill is used within the Gemini CLI environment. It leverages LLM capabilities to parse unstructured data and map it to report templates. See the [Skill Documentation](skills/psychologist-writer/SKILL.md) for usage details.
+
+### Date Calculator
+
+Simply open `date_calculator/date_calculator.html` in any modern web browser. It is entirely self-contained (HTML/CSS/JS in one file) with zero external dependencies, making it ideal for offline use.
+
+## Philosophy
+
+* **Zero External Dependencies:** All tools are designed to be lightweight, portable, and independent of external libraries or frameworks.
+* **Privacy-First:** Data processing happens locally or within your own secure Google/CLI environment.
+* **Professional Standards:** Narrative templates and scoring rules are based on established clinical practices and classification tables.
