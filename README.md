@@ -1,7 +1,6 @@
-
 # FrIEP ("Free IEP")
 
-FrIEP is a comprehensive collection of tools designed to assist school psychologists in streamlining their workflow. It automates the tedious process of scoring psychological assessments within Google Sheets and facilitates the drafting of narrative evaluation reports.
+FrIEP is a comprehensive collection of tools designed to assist school psychologists in streamlining their workflow. It automates the tedious process of scoring psychological assessments within Google Sheets and facilitates the drafting of narrative psychoeducational evaluation reports.
 
 ## Components
 
@@ -10,14 +9,16 @@ FrIEP is a comprehensive collection of tools designed to assist school psycholog
 A suite of scripts for Google Sheets that automate the scoring and marking of various psychological assessments based on clinical significance rules.
 
 * **Supported Assessments:** ASRS, BASC-3, Conners 4, EDDT, and Vineland 3.
-* **Key Feature:** Automatically marks scores (e.g., with asterisks) based on predefined thresholds using efficient batch processing.
+* **Key Feature:** Automatically marks scores (e.g., with asterisks) based on predefined thresholds using efficient batch processing to minimize API calls.
 
-### 2. Psychologist Writer Skill (`skills/psychologist-writer/`)
+### 2. Psychologist Assistant Skill (`.gemini/skills/psychologist-assistant/`)
 
-A specialized skill for the Gemini CLI that generates narrative sections for psychoeducational reports using standardized Markdown templates.
+A specialized skill for the Gemini CLI that helps draft psychoeducational evaluations and interpret assessment data.
 
-* **Functionality:** Processes student data and scores to populate templates with professional narrative and clinical classifications.
-* **Templates:** Includes Academic, Adaptive, ADHD, Autism, Cognitive, Social-Emotional, and Evaluation Summaries.
+* **Functionality**:
+    * **Evaluation Blueprint**: Follows a standardized E1-E7 structure (Coversheet to Eligibility) to ensure comprehensive report drafting.
+    * **Score Interpretation**: Includes a specialized `score-interpreter` subagent that converts raw scores into professional narrative interpretations.
+* **Templates**: Support for Cognitive (WISC-V, KABC-II, WJ-IV, CTONI-2), Achievement (WJ-IV, YCAT-2), Social-Emotional (BASC-3, EDDT), ADHD/Autism (Conners 4, ASRS), and Adaptive (Vineland 3) assessments.
 
 ### 3. Date Calculator (`date_calculator/`)
 
@@ -31,9 +32,9 @@ A lightweight, self-contained single-page HTML application for performing common
 
 Copy the code from the `.gs` files in the `google_apps_script/` directory into your Google Sheet's Apps Script editor. Refer to the [Google Apps Script README](google_apps_script/README.md) for detailed setup and customization instructions.
 
-### Psychologist Writer Skill
+### Psychologist Assistant Skill
 
-This skill is used within the Gemini CLI environment. It leverages LLM capabilities to parse unstructured data and map it to report templates. See the [Skill Documentation](skills/psychologist-writer/SKILL.md) for usage details.
+This skill is used within the Gemini CLI environment. It leverages LLM capabilities to parse data and map it to the evaluation blueprint and assessment templates. See the [Skill Documentation](.gemini/skills/psychologist-assistant/SKILL.md) for usage details.
 
 ### Date Calculator
 
