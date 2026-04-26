@@ -15,14 +15,24 @@
 
 ### Academic Skills
 
-* Oral Expression: The ability to express one's ideas, thoughts, and feelings meaningfully.
-* Listening Comprehension: The ability to receive, process, and understand auditory information.
-* Basic Reading Skills: These are the fundamental reading skills, processes, and strategies required for utilizing the major cueing systems that lead to the comprehension of written material.
-* Reading Fluency: The ability verbally and non-verbally read in a timely efficient manner.
-* Reading Comprehension: This is the process by which the ideas and meanings intended by the author are constructed by the reader.
-* Mathematics Calculation: These are the fundamental mathematics skills, processes, and strategies by which one shows an understanding of the means to reach a solution.
-* Mathematics Problem-Solving: The ability to use mathematical facts, concepts, laws, and operations to solve mathematically based problems.
-* Written Expression: The ability to use graphic symbols to communicate ideas, thoughts, and feelings meaningfully.
+* Reading: The Reading cluster assesses reading achievement, focusing on decoding and comprehension of connected text.
+* Broad Reading: The Broad Reading cluster assesses overall reading achievement, including decoding, reading speed, and comprehension.
+* Basic Reading Skills: The Basic Reading Skills cluster assesses sight vocabulary, phonics, and structural analysis.
+* Reading Comprehension: The Reading Comprehension cluster assesses comprehension and reasoning.
+* Reading Fluency: The Reading Fluency cluster assesses prosody, automaticity, and accuracy in reading.
+* Mathematics: The Mathematics cluster assesses problem-solving and computational skills.
+* Broad Mathematics: The Broad Mathematics cluster assesses overall math achievement, including problem-solving, number facility, automaticity, and reasoning.
+* Math Calculation Skills: The Math Calculation Skills cluster assesses computation and automaticity with basic math facts and skills.
+* Math Problem Solving: The Math Problem Solving cluster assesses mathematical knowledge, problem-solving, analysis, and reasoning.
+* Written Language: The Written Language cluster assesses single-word spelling and quality of written expression.
+* Broad Written Language: The Broad Written Language cluster assesses overall written language achievement, including single-word spelling, fluency in written production, and quality of expression.
+* Basic Writing Skills: The Basic Writing Skills cluster assesses writing skills in both isolated and context-based formats, including single-word spelling and identification and correction of errors in spelling, punctuation, capitalization, and word usage.
+* Written Expression: The Written Expression cluster assesses meaningful written expression and fluency.
+* Brief Achievement: The Brief Achievement cluster screens performance in reading, writing, and math.
+* Broad Achievement: The Broad Achievement cluster represents overall performance across achievement domains.
+* Academic Skills: The Academic Skills cluster assesses reading, decoding, math calculation, and single-word spelling, providing an overall score of basic achievement skills.
+* Academic Fluency: The Academic Fluency cluster assesses reading, writing, and math fluency.
+* Academic Applications: The Academic Applications cluster assesses the ability to apply academic skills to academic problems.
 
 ## COGNITIVE Assessment Information
 
