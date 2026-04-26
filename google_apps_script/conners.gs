@@ -18,7 +18,7 @@ function connersMain() {
       { min: 60, max: 64,       suffix: '*'   }
     ];
 
-    let contentCells = spreadsheet.getRange('B18:E33');
+    let contentCells = spreadsheet.getRange('B18:E34');
     findAndReplace(contentCells, connersRules);
   }
 }
